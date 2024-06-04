@@ -1,0 +1,67 @@
+FPDF est constitu� des �l�ments suivants :
+
+- le fichier principal fpdf.php contenant la classe
+- les fichiers de d�finition des polices contenus dans le r�pertoire font
+
+Les fichiers de police sont indispensables d�s que l'on veut �crire du texte dans un document.
+S'ils ne sont pas accessibles, la m�thode SetFont() produira l'erreur suivante :
+
+FPDF error: Could not include font definition file
+
+
+Remarques :
+
+- Seuls les fichiers correspondant aux polices effectivement utilis�es sont n�cessaires
+- Les tutoriels fournis dans l'archive sont pr�ts � �tre ex�cut�s
+   
+
+   function pour convertir la color de hexa decimal 
+   function hexToRgb($hex) {
+    // Remove the hash at the start if it's there
+    $hex = ltrim($hex, '#');
+
+    // Check if it's a shorthand hex color (3 digits)
+    if (strlen($hex) == 3) {
+        $r = hexdec(str_repeat(substr($hex, 0, 1), 2));
+        $g = hexdec(str_repeat(substr($hex, 1, 1), 2));
+        $b = hexdec(str_repeat(substr($hex, 2, 1), 2));
+    } else if (strlen($hex) == 6) {
+        $r = hexdec(substr($hex, 0, 2));
+        $g = hexdec(substr($hex, 2, 2));
+        $b = hexdec(substr($hex, 4, 2));
+    } else {
+        throw new Exception("Invalid hex color code.");
+    }
+
+    return ['r' => $r, 'g' => $g, 'b' => $b];
+}
+function hexToRgba($hex, $alpha = 1) {
+    // Remove the hash at the start if it's there
+    $hex = ltrim($hex, '#');
+
+    // Check if it's a shorthand hex color (3 digits)
+    if (strlen($hex) == 3) {
+        $r = hexdec(str_repeat(substr($hex, 0, 1), 2));
+        $g = hexdec(str_repeat(substr($hex, 1, 1), 2));
+        $b = hexdec(str_repeat(substr($hex, 2, 1), 2));
+    } else if (strlen($hex) == 6) {
+        $r = hexdec(substr($hex, 0, 2));
+        $g = hexdec(substr($hex, 2, 2));
+        $b = hexdec(substr($hex, 4, 2));
+    } else {
+        throw new Exception("Invalid hex color code.");
+    }
+
+    // Ensure alpha is within the correct range
+    if ($alpha < 0 || $alpha > 1) {
+        throw new Exception("Alpha value must be between 0 and 1.");
+    }
+
+    return ['r' => $r, 'g' => $g, 'b' => $b, 'a' => $alpha];
+}
+
+// Example usage
+$hexColor = "#4CAF50";
+$alpha = 0.5; // 50% opacity
+$rgbaColor = hexToRgba($hexColor, $alpha);
+echo "RGBA: (" . $rgbaColor['r'] . ", " . $rgbaColor['g'] . ", " . $rgbaColor['b'] . ", " . $rgbaColor['a'] . ")";

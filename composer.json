@@ -1,0 +1,17 @@
+{
+    "name": "vendor/2rt",
+    "description": "package to generate invoices ..",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\2rt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "2rt developers"
+        }
+    ],
+    "require": {}
+}
