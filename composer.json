@@ -1,5 +1,5 @@
 {
-    "name": "vendor/2rt",
+    "name": "2rt/2rt",
     "description": "package to generate invoices ..",
     "type": "library",
     "license": "MIT",
