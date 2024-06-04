@@ -1,11 +1,11 @@
 {
-    "name": "2rt/2rt",
-    "description": "package to generate invoices ..",
+    "name": "deuxrtmaroc/invoice",
+    "description": "Package to generate invoices.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Vendor\\2rt\\": "src/"
+            "deuxrtmaroc\\invoice\\": "src/"
         }
     },
     "authors": [

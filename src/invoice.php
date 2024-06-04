@@ -1,7 +1,9 @@
 <?php
 
-require('fpdf.php');
-require("PDF_MC_Table.php");
+namespace deuxrtmaroc\invoice;
+
+use deuxrtmaroc\invoice\PDF_MC_Table;
+
 
 class Invoice extends PDF_MC_Table
 {

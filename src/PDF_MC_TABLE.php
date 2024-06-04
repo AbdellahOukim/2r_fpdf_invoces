@@ -1,5 +1,7 @@
 <?php
 
+namespace deuxrtmaroc\invoice;
+
 class Pdf_mc_table extends FPDF
 {
     protected $widths;

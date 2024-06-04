@@ -1,5 +1,8 @@
 <?php
-require_once('invoice.php');
+
+use deuxrtmaroc\invoice\Invoice;
+
+require 'vendor/autoload.php';
 
 $data = [
     'header' => [
@@ -248,9 +251,9 @@ $options = [
     ],
 
     'style' => [
-        'entete_hauteur'=>3 * 10 ,
-        'pied_hauteur'=>3 * 10 ,
-        'pied_hauteur'=>3 * 10 ,
+        'entete_hauteur' => 3 * 10,
+        'pied_hauteur' => 3 * 10,
+        'pied_hauteur' => 3 * 10,
     ]
 ];
 
