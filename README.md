@@ -45,4 +45,4 @@ Installation:
 Install FPDF-Invoice via Composer:
 
 composer require deuxrtmaroc/fpdf_invoice
-<img src="image.jpeg" >
+<img src="presentation.png" >
