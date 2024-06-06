@@ -4,9 +4,11 @@
 
 FPDF-Invoice is a class based on the FPDF library, designed to simplify the creation of invoices and PDF files. This package offers a robust and flexible solution for generating professional PDF invoices, with the ability to customize any part of the PDF to meet your specific requirements. Whether you need to create simple invoices or detailed documents, FPDF-Invoice provides the tools and flexibility you need.
 
-Key Features:
+</p>
 
-Simple Integration:
+<h2> Key Features: </h2>
+
+Simple Integration :
 
 Easily integrate with your existing PHP projects.
 Minimal setup required to start creating invoices.
@@ -43,5 +45,4 @@ Installation:
 Install FPDF-Invoice via Composer:
 
 composer require deuxrtmaroc/fpdf_invoice
-
-</p>
+<img src="image.jpeg" >
