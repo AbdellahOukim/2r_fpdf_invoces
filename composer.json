@@ -1,5 +1,5 @@
 {
-    "name": "deuxrtmaroc/invoice",
+    "name": "deuxrtmaroc/fpdf_invoice",
     "description": "Package to generate invoices.",
     "type": "library",
     "license": "MIT",
